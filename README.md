@@ -51,7 +51,6 @@ Let's illustrate this process with our weather example, expanding it slightly to
 
 $$
 \begin{align*}
-
     p(sun|rain) = 0.29 \\
     p(rain|rain) = 0.70 \\
     p(meteor storm | rain) = 0.01 \\
@@ -61,19 +60,17 @@ $$
     p(sun | meteor storm) = 0.00 \\
     p(rain | meteor storm) = 0.00 \\
     p(meteor storm | meteor storm) = 1.00
-
 \end{align*}
 $$
 
 with corresponding transition matrix
 
 $$
-A = \begin{bmatrix}
-
+A =
+\begin{bmatrix}
 0.60 & 0.29 & 0.00 \\
 0.38 & 0.70 & 0.00 \\
-0.02 & 0.01 & 1.00 \\
-
+0.02 & 0.01 & 1.00
 \end{bmatrix}
 $$
 
