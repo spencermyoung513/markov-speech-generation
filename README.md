@@ -117,3 +117,5 @@ Too much pride in this be?
 I would say about it, I with the Council is why are calm, at peace.
 Much anger there is, Commander.
 ```
+
+Ok, so maybe we still have some work to do before we convince anyone that this is actually Yoda speaking. But this is a good start! Hopefully you've been able to see the power of Markov chains through this short demo.
