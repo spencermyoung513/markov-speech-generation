@@ -1,9 +1,9 @@
-# MARKOV SPEECH GENERATION
+# Markov Speech Generation
 
 In this project, I create a simple Markov chain model and use it to generate sentences from our favorite green Jedi. This notebook contains a brief explanation of my model 
 and demonstrates how to deploy it.
 
-### MODEL OVERVIEW
+### Model Overview:
 
 A **Markov chain** is formally defined as a sequence of random variables $X_1, X_2, ..., X_n$ such that the following relation holds for all $n$:
 
@@ -75,13 +75,13 @@ $ [rain, rain, rain, sun, sun, sun, sun, sun, rain, ... , sun, meteor storm] $
 
 after which we would terminate (since we cannot transition out of the catastrophic meteor storm state).
 
-### MARKOV SENTENCE GENERATION
+### Sentence Generation:
 
 To produce sentences that imitate the style of a specific person, we first require training data -- sentences actually spoken by that person in the past. From this training data, the transition matrix can be iteratively constructed. Simply assign each word used by the speaker to a column of a zeros matrix and increment entries where we "transitioned" from one word to another. Then, normalize the columns to form probability vectors. 
 
 It is also useful to add two artificial states, $tart and $top, to the beginning and end of each training sentence respectively. This ensures that as we create a Markov forecast, we actually form a sentence instead of an endless stream of words. The artificial states can be excluded from the final forecast.
 
-### CODE DEMO
+### Code Demo:
 
 Before we get going with our fake Yoda, we need to import the necessary classes.
 
