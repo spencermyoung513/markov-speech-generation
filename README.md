@@ -9,9 +9,7 @@ A **Markov chain** is formally defined as a sequence of random variables $X_1, X
 
 $$
 \begin{align}
-
     P(X_n | X_{n-1}, X_{n-2}, ..., X_1) = P(X_n | X_{n-1})
-
 \end{align}
 $$
 
@@ -23,23 +21,20 @@ Here is a concrete example. Suppose the weather can be modeled as a Markov chain
 
 $$
 \begin{align*}
-
     p(sun|rain) = 0.3 \\
     p(rain|rain) = 0.7 \\ 
     p(sun|sun) = 0.6 \\
     p(rain|sun) = 0.4 \\
-
 \end{align*}
 $$
 
 A common way to efficiently model a system like this is to represent it as a matrix $A$ of transition probabilities, where each column corresponds to the current state (sun or rain today) and each row corresponds to the possible next state (sun or rain tomorrow). In this case, we would have
 
 $$
-A = \begin{bmatrix}
-
+A =
+\begin{bmatrix}
 0.6 & 0.3 \\
 0.4 & 0.7
-
 \end{bmatrix}
 $$
 
